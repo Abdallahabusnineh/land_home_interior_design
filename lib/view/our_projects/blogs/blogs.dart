@@ -55,7 +55,7 @@ class Blogs extends StatelessWidget {
                 child: Align(
                   alignment: Alignment.centerRight,
                   child: Container(
-                      margin: EdgeInsets.symmetric(vertical: 15.h),
+                      margin: EdgeInsets.symmetric(vertical: 13.h),
                       decoration: BoxDecoration(
                         color: Colors.white.withOpacity(.9),
                         borderRadius: BorderRadius.circular(5.sp),
