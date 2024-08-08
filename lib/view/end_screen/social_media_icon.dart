@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
+import '../../core/utils/app_color.dart';
 import '../../core/utils/custom_assets/image_path_assets.dart';
 
 class SocialMediaIcon extends StatelessWidget {
@@ -15,7 +16,7 @@ class SocialMediaIcon extends StatelessWidget {
           width: 45,
         height: 45,
         decoration: BoxDecoration(
-          color: Color(0xFFE5E5E5),
+          color: AppColor.socialMediaIconColor,
           borderRadius: BorderRadius.circular(5),
         ),
           child: Image(image: AssetImage(Assets.imagesFacebookLogo),),
