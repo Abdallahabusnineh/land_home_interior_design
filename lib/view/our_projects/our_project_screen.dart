@@ -6,6 +6,7 @@ import 'package:land_interior_design/view/our_projects/our_project_container.dar
 import 'package:land_interior_design/view/our_projects/our_project_image_builder.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
+import '../../core/utils/app_color.dart';
 import '../../core/utils/custom_assets/font_app_styles.dart';
 import '../../core/utils/is_responsive.dart';
 import '../../core/utils/shared_widget/text_button_purple.dart';
@@ -36,7 +37,7 @@ class OurProjectScreen extends StatelessWidget {
                           clipBehavior: Clip.none,
                           margin: EdgeInsets.symmetric(vertical: 60),
                           transformAlignment: Alignment.center,
-                          color: Colors.white.withOpacity(.82),
+                          color: AppColor.whiteWithOpacity82,
                           width: MediaQuery.sizeOf(context).width*.05,
 
                         ),)

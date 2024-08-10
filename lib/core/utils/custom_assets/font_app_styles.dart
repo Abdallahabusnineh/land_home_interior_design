@@ -107,7 +107,7 @@ class FontAppStyles {
   }
   static TextStyle styleGreyWeight400WithOpacity(double fontSize) {
     return TextStyle(
-      color: AppColor.greyWithOpacity38,
+      color: AppColor.whiteWithOpacity82,
       fontSize: fontSize,
       fontFamily: 'Poppins',
       fontWeight: FontWeight.w400,

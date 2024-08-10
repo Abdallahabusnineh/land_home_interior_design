@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:land_interior_design/core/utils/is_responsive.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
+import '../../core/utils/app_color.dart';
 import '../../core/utils/custom_assets/font_app_styles.dart';
 import '../../core/utils/shared_widget/text_button_purple.dart';
 
@@ -14,7 +15,7 @@ class OurProjectContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white.withOpacity(.7),
+      color: AppColor.whiteWithOpacity7,
       padding: EdgeInsets.symmetric(horizontal: 2.w),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,

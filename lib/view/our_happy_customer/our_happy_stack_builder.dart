@@ -4,6 +4,7 @@ import 'package:land_interior_design/core/utils/custom_fontsize.dart';
 import 'package:land_interior_design/core/utils/is_responsive.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
+import '../../core/utils/app_color.dart';
 import '../../core/utils/custom_assets/font_app_styles.dart';
 import '../../core/utils/custom_assets/image_path_assets.dart';
 
@@ -29,40 +30,38 @@ final String imageUrl,description,personName,personImageUrl;
           left: 1,
           child: Stack(
             children: [
-              SafeArea(
-                child: Container(
-                  height: 250,
-                  padding: EdgeInsets.symmetric(horizontal: 5.w),
-                  margin: EdgeInsets.only(left: (10.w),right: (10.w),bottom: 30,top: 45),
-                  decoration: BoxDecoration(color: Colors.white, boxShadow: [
-                    BoxShadow(
-                        color: Colors.black.withOpacity(.5),
-                        blurRadius: 59,
-                        spreadRadius: 9)
-                  ]),
-                  child: Column(
-                    children: [
-                      Expanded(
-                        child: Align(
-                          alignment: Alignment.center,
-                          child: Text(
-                            description,
-                            style: FontAppStyles.styleBlackWeight400(getResponsiveFontSize(context, fontSize: IsResponsive.isWebScreen(context)?15:9)),
+              Container(
+                height: 200,
+                padding: EdgeInsets.symmetric(horizontal: 5.w),
+                margin: EdgeInsets.only(left: (12.w),right: (12.w),top: 55,bottom: IsResponsive.isWebScreen(context)?0:50),
+                decoration: BoxDecoration(color: AppColor.whiteColor, boxShadow: [
+                  BoxShadow(
+                      color: AppColor.blackWithOpacity5,
+                      blurRadius: 59,
+                      spreadRadius: 9)
+                ]),
+                child: Column(
+                  children: [
+                    Expanded(
+                      child: Align(
+                        alignment: Alignment.center,
+                        child: Text(
+                          description,
+                          style: FontAppStyles.styleBlackWeight400(getResponsiveFontSize(context, fontSize: IsResponsive.isWebScreen(context)?15:9)),
 
-                          ),
                         ),
                       ),
-                      Align(
-                        child: Container(
-                          margin: EdgeInsets.only(bottom: 10),
-                          child: Text(
-                            personName,
-                            style: FontAppStyles.styleBlackWeight600(getResponsiveFontSize(context, fontSize: 15)),
-                          ),
+                    ),
+                    Align(
+                      child: Container(
+                        margin: EdgeInsets.only(bottom: 10),
+                        child: Text(
+                          personName,
+                          style: FontAppStyles.styleBlackWeight600(getResponsiveFontSize(context, fontSize: 15)),
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
               Align(

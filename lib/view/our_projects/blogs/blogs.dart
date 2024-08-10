@@ -6,6 +6,7 @@ import 'package:land_interior_design/view/our_projects/blogs/blogs_builder.dart'
 import 'package:land_interior_design/view/our_projects/blogs/list_of_blog.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
+import '../../../core/utils/app_color.dart';
 import '../../../core/utils/custom_assets/image_path_assets.dart';
 import '../../../core/utils/is_responsive.dart';
 import '../../../core/utils/shared_widget/text_button_purple.dart';
@@ -57,7 +58,7 @@ class Blogs extends StatelessWidget {
                   child: Container(
                       margin: EdgeInsets.symmetric(vertical: 13.h),
                       decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(.9),
+                        color: AppColor.whiteWithOpacity9,
                         borderRadius: BorderRadius.circular(5.sp),
                       ),
                       child: IconButton(

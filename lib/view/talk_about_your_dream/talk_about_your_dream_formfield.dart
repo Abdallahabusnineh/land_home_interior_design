@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:land_interior_design/core/utils/app_color.dart';
 import 'package:land_interior_design/core/utils/is_responsive.dart';
 import 'package:land_interior_design/core/utils/shared_widget/text_button_purple.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
@@ -19,7 +20,7 @@ class TalkAboutYourDreamFormField extends StatelessWidget {
           decoration: InputDecoration(
             hintText: 'Name',
               enabledBorder: UnderlineInputBorder(
-                borderSide: BorderSide(color: Colors.grey.withOpacity(.33)),
+                borderSide: BorderSide(color: AppColor.greyWithOpacity33),
 
               )
 
@@ -33,7 +34,7 @@ class TalkAboutYourDreamFormField extends StatelessWidget {
             decoration: InputDecoration(
               hintText: 'Phone/Email',
               enabledBorder: UnderlineInputBorder(
-                borderSide: BorderSide(color: Colors.grey.withOpacity(.33)),
+                borderSide: BorderSide(color: AppColor.greyWithOpacity33),
 
               )
 
@@ -52,7 +53,7 @@ class TalkAboutYourDreamFormField extends StatelessWidget {
           decoration: InputDecoration(
               hintText: 'Name',
               enabledBorder: UnderlineInputBorder(
-                borderSide: BorderSide(color: Colors.grey.withOpacity(.33)),
+                borderSide: BorderSide(color: AppColor.greyWithOpacity33),
 
               )
 

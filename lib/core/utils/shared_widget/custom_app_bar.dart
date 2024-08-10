@@ -6,14 +6,15 @@ import 'package:land_interior_design/core/utils/shared_widget/text_button_appbar
 import 'package:land_interior_design/core/utils/shared_widget/toggle_button.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
+import '../app_color.dart';
 import '../custom_assets/image_path_assets.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({super.key});
   static PreferredSizeWidget customMobileAppBar() {
     return AppBar(
-      backgroundColor: Colors.white,
-      iconTheme: IconThemeData(color: Colors.black, shadows: [
+      backgroundColor: AppColor.whiteColor,
+      iconTheme: IconThemeData(color: AppColor.blackColor, shadows: [
         BoxShadow(
           color: Colors.black,
           blurRadius: .5,

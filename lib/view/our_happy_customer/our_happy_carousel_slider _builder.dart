@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:land_interior_design/core/utils/is_responsive.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
+import '../../core/utils/app_color.dart';
 import 'list_image.dart';
 
 class OurHappyCarouselSliderBuilder extends StatefulWidget {
@@ -22,7 +23,7 @@ final CarouselController carouselController = CarouselController();
         if(!IsResponsive.isWebScreen(context))
           IconButton(onPressed: (){
             carouselController.previousPage();
-          }, icon: Icon(Icons.arrow_back,color: Color(0xFF241330)),style: IconButton.styleFrom(
+          }, icon: Icon(Icons.arrow_back,color: AppColor.arrowIconColor),style: IconButton.styleFrom(
               backgroundColor: Colors.white.withOpacity(.8)
           ),),
         Expanded(
@@ -48,7 +49,7 @@ final CarouselController carouselController = CarouselController();
         if(!IsResponsive.isWebScreen(context))
         IconButton(onPressed: (){
           carouselController.nextPage();
-        }, icon: Icon(Icons.arrow_forward,color: Color(0xFF241330)),style: IconButton.styleFrom(
+        }, icon: Icon(Icons.arrow_forward,color: AppColor.arrowIconColor),style: IconButton.styleFrom(
 
           backgroundColor: Colors.white.withOpacity(.8)
 

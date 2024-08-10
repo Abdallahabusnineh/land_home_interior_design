@@ -12,60 +12,49 @@ class OurInteriorImageBuilder extends StatelessWidget {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 10.w),
       height: 500,
-      child:Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Expanded(
-            child: Column(
-              children: [
-                Expanded(
-                  child: Image(image:  AssetImage(Assets.imagesProduct1),fit: BoxFit.cover,),
-                ),
-                SizedBox(height: 5,),
-
-                Expanded(
-                  child: Image(image:  AssetImage(Assets.imagesProduct2),fit: BoxFit.cover,),
-                ),
-
-              ],
-            ),
-          ),
-          Expanded(
-            child: Column(
-              children: [
-                Expanded(
-                  child: Image(image:  AssetImage(Assets.imagesProduct3),fit: BoxFit.cover,),
-                ),
-              ],
-            ),
-          ),
-          if(IsResponsive.isWebScreen(context))
+      child:IntrinsicHeight(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
             Expanded(
               child: Column(
                 children: [
                   Expanded(
-                    child: Image(image:  AssetImage(Assets.imagesProduct4),fit: BoxFit.cover,),
+                    child: Image(image:  AssetImage(Assets.imagesProduct1),fit: BoxFit.cover,),
                   ),
                   SizedBox(height: 5,),
                   Expanded(
-                    child: Image(image:  AssetImage(Assets.imagesProduct5),fit: BoxFit.cover,),
+                    child: Image(image:  AssetImage(Assets.imagesProduct2),fit: BoxFit.cover,),
                   ),
-
                 ],
               ),
             ),
-          if(IsResponsive.isWebScreen(context))
+            SizedBox(width: 5,),
             Expanded(
-              child: Column(
-                children: [
-                  Expanded(
-                    child: Image(image:  AssetImage(Assets.imagesProduct6),fit: BoxFit.cover,),
-                  ),
-                ],
-              ),
+              child: Image(image:  AssetImage(Assets.imagesProduct3),fit: BoxFit.cover,),
             ),
-        ],
+            if(IsResponsive.isWebScreen(context))
+              Expanded(
+                child: Column(
+                  children: [
+                    Expanded(
+                      child: Image(image:  AssetImage(Assets.imagesProduct4),fit: BoxFit.cover,),
+                    ),
+                    SizedBox(height: 5,),
+                    Expanded(
+                      child: Image(image:  AssetImage(Assets.imagesProduct5),fit: BoxFit.cover,),
+                    ),
+
+                  ],
+                ),
+              ),
+            if(IsResponsive.isWebScreen(context))
+              Expanded(
+                child: Image(image:  AssetImage(Assets.imagesProduct6),fit: BoxFit.cover,),
+              ),
+          ],
+        ),
       ),
     );
   }
