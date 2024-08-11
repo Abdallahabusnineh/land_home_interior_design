@@ -12,7 +12,6 @@ class WhatWeDoBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return GridView(
       gridDelegate:  SliverGridDelegateWithFixedCrossAxisCount(
-
           mainAxisSpacing: 4.h,
           crossAxisCount: IsResponsive.isWebScreen(context)?4:2
       ),

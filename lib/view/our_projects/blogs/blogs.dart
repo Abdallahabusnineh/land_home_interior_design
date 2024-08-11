@@ -30,6 +30,15 @@ class Blogs extends StatelessWidget {
         ),
         Stack(
           children: [
+/*
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: listOfBlog.map((e) => IntrinsicHeight(child: e)).toList(),
+              ),
+            ),
+*/
+
             SizedBox(
               height: 280,
               child: GridView.builder(

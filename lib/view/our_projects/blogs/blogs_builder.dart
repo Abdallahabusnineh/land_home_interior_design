@@ -14,15 +14,14 @@ final String imageUrl,title,subTitle;
       children: [
         Expanded(
           child: Image(
+            height: 300,
             image: AssetImage(imageUrl),
             fit: BoxFit.cover,),
         ),
         SizedBox(height: 1.h,),
         Text(title,style: FontAppStyles.styleBlackWeight500(20),maxLines: 1,overflow: TextOverflow.ellipsis,),
         SizedBox(height: 1.h,),
-        Container(
-
-            child: Text(subTitle,style: FontAppStyles.styleBlackWeight400(12),maxLines: 3,overflow: TextOverflow.ellipsis,))
+        Text(subTitle,style: FontAppStyles.styleBlackWeight400(15),maxLines: 3,overflow: TextOverflow.ellipsis,)
       ],
     );
 
