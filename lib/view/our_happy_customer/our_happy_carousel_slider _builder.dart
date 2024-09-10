@@ -7,14 +7,15 @@ import '../../core/utils/app_color.dart';
 import 'list_image.dart';
 
 class OurHappyCarouselSliderBuilder extends StatefulWidget {
-   OurHappyCarouselSliderBuilder({super.key});
+   const OurHappyCarouselSliderBuilder({super.key});
 
   @override
   State<OurHappyCarouselSliderBuilder> createState() => _OurHappyCarouselSliderBuilderState();
 }
 
 class _OurHappyCarouselSliderBuilderState extends State<OurHappyCarouselSliderBuilder> {
-final CarouselController carouselController = CarouselController();
+final CarouselSliderController carouselController = CarouselSliderController();
+
 
   @override
   Widget build(BuildContext context) {

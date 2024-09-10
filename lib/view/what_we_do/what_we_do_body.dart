@@ -22,7 +22,6 @@ class WhatWeDoBody extends StatelessWidget {
         WhatWeDoBuilder(imageUrl: Assets.imagesBedroom, title: 'Bedroom'),
         WhatWeDoBuilder(imageUrl: Assets.imagesLivingRoom, title: 'Living Room'),
         WhatWeDoBuilder(imageUrl: Assets.imagesHomeOffice, title: 'Home Office'),
-
       ],
     );
   }

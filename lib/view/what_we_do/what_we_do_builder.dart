@@ -10,23 +10,18 @@ class WhatWeDoBuilder extends StatelessWidget {
 String imageUrl,title;
   @override
   Widget build(BuildContext context) {
-  return  Row(
-      children: [
-        Column(
-          children: [
-            Expanded(
-              child: Container(child: Image(image: AssetImage(imageUrl),)
-                ,decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(15.sp),
-                ),
-              ),
-            ),
-            SizedBox(height: 2.h,),
-            Text(title,style: FontAppStyles.stylePurpleWeight600(12),maxLines: 2,overflow: TextOverflow.ellipsis,)
-          ],
-        )
-
-      ],
-    );
+  return  Column(
+    children: [
+      Expanded(
+        child: Container(child: Image(image: AssetImage(imageUrl),)
+          ,decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(15.sp),
+          ),
+        ),
+      ),
+      SizedBox(height: 2.h,),
+      Text(title,style: FontAppStyles.stylePurpleWeight600(12),maxLines: 2,overflow: TextOverflow.ellipsis,)
+    ],
+  );
   }
 }

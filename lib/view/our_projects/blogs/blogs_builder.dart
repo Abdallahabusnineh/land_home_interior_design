@@ -11,15 +11,21 @@ final String imageUrl,title,subTitle;
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Expanded(
-          child: Image(
-            height: 300,
-            image: AssetImage(imageUrl),
-            fit: BoxFit.cover,),
+          child: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              image: DecorationImage(
+                image: AssetImage(imageUrl),
+                fit: BoxFit.cover
+              )
+            ),
+          ),
         ),
         SizedBox(height: 1.h,),
-        Text(title,style: FontAppStyles.styleBlackWeight500(20),maxLines: 1,overflow: TextOverflow.ellipsis,),
+        Text(title,style: FontAppStyles.styleBlackWeight500(20),overflow: TextOverflow.ellipsis,),
         SizedBox(height: 1.h,),
         Text(subTitle,style: FontAppStyles.styleBlackWeight400(15),maxLines: 3,overflow: TextOverflow.ellipsis,)
       ],

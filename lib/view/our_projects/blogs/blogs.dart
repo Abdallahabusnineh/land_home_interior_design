@@ -30,58 +30,48 @@ class Blogs extends StatelessWidget {
         ),
         Stack(
           children: [
-/*
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: listOfBlog.map((e) => IntrinsicHeight(child: e)).toList(),
-              ),
-            ),
-*/
-
             SizedBox(
-              height: 280,
+              height:280,
               child: GridView.builder(
+                padding: EdgeInsets.symmetric(horizontal: 4.w),
                 physics: AlwaysScrollableScrollPhysics(),
                 shrinkWrap: true,
                 scrollDirection: Axis.horizontal,
                 itemCount: listOfBlog.length,
                 itemBuilder: (BuildContext context, int index) {
-                  return Container(
-                    child: listOfBlog[index],
-                  );
+                  return listOfBlog[index];
                 }, gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 1,
-                  mainAxisSpacing: 10,
-                  crossAxisSpacing: 10,
-
-                ),
+                crossAxisCount: 1,
+                mainAxisSpacing: 2.w,
+               ),
               ),
             ),
-            Positioned(
-                right: 0,
-                bottom: 30,
-                top: 0,
-                child: Align(
-                  alignment: Alignment.centerRight,
-                  child: Container(
-                      margin: EdgeInsets.symmetric(vertical: 13.h),
-                      decoration: BoxDecoration(
-                        color: AppColor.whiteWithOpacity9,
-                        borderRadius: BorderRadius.circular(5.sp),
-                      ),
-                      child: IconButton(
-                        onPressed: () {},
-                        icon: Icon(
-                          Icons.chevron_right,
-                        ),
-                      )),
-                ))
+           /* Positioned(
+              right: 0,
+              top: 1,
+              bottom: 1,
+              child: Container(
+                alignment: Alignment.topRight,
+                margin: EdgeInsets.symmetric(vertical: 120),
+               decoration: BoxDecoration(
+                 color: Colors.white.withOpacity(.8),
+                 borderRadius: BorderRadius.circular(20),
+
+               ),
+                child: IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.arrow_forward_ios,
+                    color: AppColor.blackColor,
+                  ),
+                ),
+              ),
+            )*/
           ],
         ),
-        SizedBox(
-          height: 3.h,
-        ),
+
+
+
       ],
     );
   }

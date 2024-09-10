@@ -14,17 +14,15 @@ class WhatWeDoScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(top: 8.h,left: 4.w,right: 4.w),
+      padding: EdgeInsets.only(top: 4.h,left: 4.w,right: 4.w),
       child: Column(
         children: [
-          Row(
-            mainAxisAlignment: IsResponsive.isWebScreen(context)?MainAxisAlignment.center:MainAxisAlignment.start,
-            children: [
-              Container(
-                  child: Text('What We Do?',style: FontAppStyles.styleBlackWeight500(20),)),
-            ],
+          IsResponsive.isWebScreen(context)?Text('What We Do?',style: FontAppStyles.styleBlackWeight500(20),):Container(
+            alignment: Alignment.centerLeft,
+            padding: EdgeInsets.only(left: 6.w),
+            child: Text('What We Do?',style: FontAppStyles.styleBlackWeight500(20),),
           ),
-          IsResponsive.isWebScreen(context)?SizedBox(height: 5.h,):SizedBox(),
+          SizedBox(height: IsResponsive.isWebScreen(context)?5.h:2.h,),
           WhatWeDoBody(),
           SizedBox(height: 5.h,),
           IsResponsive.isWebScreen(context)?

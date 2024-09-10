@@ -65,7 +65,8 @@ class MakeYourDreamInteriors extends StatelessWidget {
                     ),
                   ),
                 ],
-              )
+              ),
+
             ],
           )
         : Container(
